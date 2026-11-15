@@ -7,7 +7,7 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.110.0-009688.svg?logo=fastapi)](https://fastapi.tiangolo.com)
 [![React](https://img.shields.io/badge/React-18.3-61DAFB.svg?logo=react)](https://react.dev)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.4-38B2AC.svg?logo=tailwind-css)](https://tailwindcss.com)
-[![Pytest](https://img.shields.io/badge/Tests-21%20Passed-brightgreen.svg?logo=pytest)](https://pytest.org)
+[![Pytest](https://img.shields.io/badge/Tests-24%20Passed-brightgreen.svg?logo=pytest)](https://pytest.org)
 [![Google Cloud Run](https://img.shields.io/badge/Deploy-Google%20Cloud%20Run-4285F4.svg?logo=google-cloud)](https://cloud.google.com/run)
 
 ---
@@ -379,28 +379,31 @@ testpaths: tests
 plugins: anyio-4.16.0, asyncio-1.5.0
 
 tests/test_ai_assistant.py::test_ai_assistant_next_medication_query PASSED        [  4%]
-tests/test_ai_assistant.py::test_ai_assistant_safety_never_double_dose PASSED     [  9%]
-tests/test_ai_assistant.py::test_ai_assistant_bengali_language_support PASSED    [ 14%]
-tests/test_ai_assistant.py::test_ai_assistant_emergency_red_flag_symptoms PASSED [ 19%]
-tests/test_api_auth.py::test_health_endpoint PASSED                              [ 23%]
-tests/test_api_auth.py::test_login_success PASSED                                [ 28%]
-tests/test_api_auth.py::test_login_invalid_password PASSED                       [ 33%]
-tests/test_api_auth.py::test_me_endpoint_with_valid_token PASSED                 [ 38%]
-tests/test_api_auth.py::test_protected_endpoint_without_token PASSED             [ 42%]
-tests/test_api_medications.py::test_list_medications_for_elderly PASSED          [ 47%]
-tests/test_api_medications.py::test_today_schedule_and_logging PASSED            [ 52%]
-tests/test_api_medications.py::test_rbac_unauthorized_elderly_profile_access PASSED [ 57%]
-tests/test_api_medications.py::test_caregiver_authorized_ward_access PASSED     [ 61%]
-tests/test_api_medications.py::test_caregiver_unauthorized_ward_access PASSED   [ 66%]
-tests/test_database.py::test_models_metadata_registration PASSED                 [ 71%]
-tests/test_database.py::test_password_hashing PASSED                             [ 76%]
-tests/test_database.py::test_seeded_data_retrieval PASSED                        [ 80%]
-tests/test_emergency_sos.py::test_emergency_contacts_list PASSED                 [ 85%]
-tests/test_emergency_sos.py::test_one_tap_sos_trigger_and_simulation_label PASSED [ 90%]
-tests/test_frontend_serving.py::test_serve_frontend_index PASSED                 [ 95%]
-tests/test_frontend_serving.py::test_api_routes_not_shadowed_by_frontend PASSED [100%]
+tests/test_ai_assistant.py::test_ai_assistant_safety_never_double_dose PASSED     [  8%]
+tests/test_ai_assistant.py::test_ai_assistant_bengali_language_support PASSED    [ 12%]
+tests/test_ai_assistant.py::test_ai_assistant_emergency_red_flag_symptoms PASSED [ 16%]
+tests/test_api_auth.py::test_health_endpoint PASSED                              [ 20%]
+tests/test_api_auth.py::test_login_success PASSED                                [ 25%]
+tests/test_api_auth.py::test_login_invalid_password PASSED                       [ 29%]
+tests/test_api_auth.py::test_me_endpoint_with_valid_token PASSED                 [ 33%]
+tests/test_api_auth.py::test_protected_endpoint_without_token PASSED             [ 37%]
+tests/test_api_medications.py::test_list_medications_for_elderly PASSED          [ 41%]
+tests/test_api_medications.py::test_today_schedule_and_logging PASSED            [ 45%]
+tests/test_api_medications.py::test_rbac_unauthorized_elderly_profile_access PASSED [ 50%]
+tests/test_api_medications.py::test_caregiver_authorized_ward_access PASSED     [ 54%]
+tests/test_api_medications.py::test_caregiver_unauthorized_ward_access PASSED   [ 58%]
+tests/test_database.py::test_models_metadata_registration PASSED                 [ 62%]
+tests/test_database.py::test_password_hashing PASSED                             [ 66%]
+tests/test_database.py::test_seeded_data_retrieval PASSED                        [ 70%]
+tests/test_emergency_sos.py::test_emergency_contacts_list PASSED                 [ 75%]
+tests/test_emergency_sos.py::test_one_tap_sos_trigger_and_simulation_label PASSED [ 79%]
+tests/test_frontend_serving.py::test_serve_frontend_index PASSED                 [ 83%]
+tests/test_frontend_serving.py::test_api_routes_not_shadowed_by_frontend PASSED [ 87%]
+tests/test_prescription_ocr.py::test_prescription_upload_and_extraction PASSED [ 91%]
+tests/test_prescription_ocr.py::test_prescription_human_review_gate_confirmation PASSED [ 95%]
+tests/test_prescription_ocr.py::test_prescription_rejection PASSED       [100%]
 
-============================== 21 passed in 11.85s ==============================
+============================== 24 passed in 13.25s ==============================
 ```
 
 ---
